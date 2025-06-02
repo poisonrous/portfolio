@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +9,128 @@
 <body>
 <header>
     <nav id="navbar">
-        <a href="#welcome-section">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#welcome-section">Inicio</a>
+        <a href="#about-section">Sobre mí</a>
+        <a href="#skills">Tecnologías</a>
+        <a href="#projects">Portafolio</a>
+        <a href="#contact">Contacto</a>
     </nav>
 </header>
 <main>
-    <section id="welcome-section">
-        <div id="title"><h1>Hi, I'm Rous!</h1></div>
-        <div id="subtitle"><h2>I'm a web developer.</h2></div>
-        <div id="purple"><h4>And I also like purple.</h4></div>
+        <section id="welcome-section">
+            <div id="title"><h1>¡Hola!</h1></div>
+            <div id="subtitle"><h2>Mi nombre es Rosalinda Abreu.</h2></div>
+            <div id="purple"><h4>Y soy desarrolladora web.</h4></div>
+        </section>
+        <section id="about-section">
+            <div id="about"><h1>Sobre mí</h1></div>
+            <div id="about-container">
+                <div id="description">
+                    <p>Me encanta aprender y explorar nuevas herramientas para mejorar mis habilidades. Mi objetivo es aplicar mis conocimientos de programación web en proyectos reales.</p>
+                    <p>Actualmente, estudio Ingeniería Telemática en la Universidad Centroccidental "Lisandro Alvarado", donde he desarrollado una sólida base en tecnologías de la información, redes y programación.</p>
+                    <p>Además de mi experiencia técnica, aprendo y me adapto rápido, y tengo habilidades para la resolución e problemas. Hablo español como lengua materna y tengo un nivel avanzado de inglés (C1), lo que me permite trabajar con equipos internacionales, acceder a documentación técnica y aprender continuamente de diversas fuentes de conocimiento. </p>
+                    <p>Me apasiona la innovación y el aprendizaje constante.</p>
+                </div>
+                <div id="picture">
+                    <img src="./media/foto.jpg" alt="Foto de Rous">
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+        <h1 id="skills-h1">Tecnologías que manejo</h1>
+        <div id="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Maquetación semántica y estructurada para proyectos web modernos.</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Diseño responsivo, animaciones y estilización avanzada con Flexbox y Grid.</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Programación interactiva, manipulación del DOM y desarrollo de aplicaciones dinámicas.</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Desarrollo de interfaces interactivas y componentes reutilizables con React.</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+                <p>Control de versiones, colaboración en proyectos y manejo de repositorios.</p>
+            </div>
+        </div>
     </section>
     <section id="projects">
-        <h1 id="projects-h1">These are my freeCodeCamp projects:</h1>
+        <h1 id="projects-h1">Proyectos en los que he trabado</h1>
         <div id="projects-container">
-            <a href="https://poisonrous.github.io/survey/">
-                <div class="project-tile">
-                    <img src="./media/survey-form.png" />
-                    <h3 class="project-title">Survey Form</h3>
+        
+            <div class="project">
+                <div class="project-image">
+                    <img src="./media/tstimer.png" alt="TSTimer">
                 </div>
-                <a href="https://poisonrous.github.io/tribute-page">
-                    <div class="project-tile">
-                        <img src="./media/tribute-page.png" />
-                        <h3 class="project-title">Tribute Page</h3>
-                    </div>
-                </a>
-                <a href="https://poisonrous.github.io/technical-documentation-page/">
-                    <div class="project-tile">
-                        <img src="./media/documentation-page.png" />
-                        <h3 class="project-title">Technical Documentation Page</h3>
-                    </div>
-                </a>
-                <a href="https://poisonrous.github.io/sns-landing-page/">
-                    <div class="project-tile">
-                        <img src="./media/landing-page.png" />
-                        <h3 class="project-title">Product Landing Page</h3>
-                    </div>
-                </a>
+                <div class="project-description">
+                    <h3 class="project-title">TSTimer</h3>
+                    <p>Esta aplicación permite generar y guardar playlists de una duración especificada por el usuario a partir de canciones de Taylor Swift.</p>
+                    <p><strong>Tech Stack:</strong> React, MongoDB, Express, Node, Spotify API</p>
+                    <a href="https://github.com/poisonrous/TSTimer">Ver en GitHub</a>
+                </div>
+            </div>
+
+            <div class="project reverse">
+                <div class="project-image">
+                    <img src="./media/santosluzardo.png" alt="Amigos de Santos Luzardo">
+                </div>
+                <div class="project-description">
+                    <h3 class="project-title">Amigos de Santos Luzardo</h3>
+                    <p>Sistema web creado para facilitar la gestión de medicamentos donados a pacientes crónicos en la comunidad de Santos Luzardo. Creado para el Hackathon CCCB 2024.</p>
+                    <p><strong>Tech Stack:</strong> React, Vite, DJango, PostgreSQL</p>
+                    <a href="https://github.com/iabrahaamxs/hackathon2024">Ver en GitHub</a>
+                </div>
+
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="./media/frenzalchemy.png" alt="Frenzalchemy">
+                </div>
+                <div class="project-description">
+                    <h3 class="project-title">Frenzalchemy</h3>
+                    <p>Colección de 3 minijuegos con temática de burbujas creadas para la Lara Game 
+                    Jam 2025.</p>
+                    <p><strong>Tech Stack:</strong> Unity, C#</p>
+                    <a href="https://globalgamejam.org/games/2025/frenzalchemy-3/">Ver en Global Game Jam</a>
+                </div>
+            </div>
+
+            <div class="project reverse">
+                <div class="project-image">
+                    <img src="./media/landing-page.png" alt="Product Landing Page">
+                </div>
+                <div class="project-description">
+                    <h3 class="project-title">Product Landing Page</h3>
+                    <p>Landing page con diseño responsivo para promocionar un álbum musical. Creado como parte de la certificación en diseño responsivo de freeCodeCamp.</p>
+                    <p><strong>Tech Stack:</strong> HTML, CSS</p>
+                    <a href="https://poisonrous.github.io/sns-landing-page/">Ver en GitHub</a>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id="contact">
-        <h1>Check out my repositories!</h1>
+        <h1>¡Conéctate conmigo!</h1>
+        <p>Consulta mis proyectos y ponte en contacto.</p>
+        <div>
         <a id="profile-link" href="https://github.com/poisonrous" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://www.linkedin.com/in/rosalinda-abreu/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://t.me/callmerous" target="_blank"><i class="fab fa-telegram"></i>Telegram</a>
+        <a href="mailto:abreuparrarosalinda@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
+        </div>
     </section>
 </main>
 </body>

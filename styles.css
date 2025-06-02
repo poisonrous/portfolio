@@ -45,7 +45,6 @@ header {
 }
 
 #welcome-section {
-  width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, mediumpurple, slateblue, darkslateblue);
   color: blanchedalmond;
@@ -68,11 +67,11 @@ header {
 }
 
 #title {
-  width: 300px;
+  width: 150px;
 }
 
 #subtitle {
-  width: 425px;
+  width: 680px;
 }
 
 #welcome-section h1 {
@@ -125,10 +124,94 @@ h4 {
   animation: fade-in 10s;
 }
 
-#projects {
-  width: 100vw;
+#about-section {
+  height: 100vh;
   background-color: blanchedalmond;
-  color: blanchedalmond;
+  color: slateblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+#about {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#description {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+#picture img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#picture img:hover {
+  transform: scale(1.1);
+}
+
+#skills {
+  background-color: blanchedalmond;
+  color: slateblue;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+#skills-h1 {
+  margin-bottom: 30px;
+}
+
+#skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.skill {
+  background-color: slateblue;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+
+#projects {
+  background-color: blanchedalmond;
+  color: mediumpurple;
   font-size: 2em;
   display: flex;
   flex-direction: column;
@@ -139,29 +222,55 @@ h4 {
 #projects-h1 {
   color: slateblue;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #projects-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-evenly;
-  gap: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-#projects-container img {
+.project {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: slateblue;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image img {
   width: 480px;
   height: 300px;
   object-fit: cover;
 }
 
-.project-tile {
-  width: 480px;
-  height: 350px;
-  background-color: slateblue;
-  font-size: 0.7em;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.project-description {
+  max-width: 400px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.project-description a {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-description a:hover {
+  text-decoration: underline;
 }
 
 #contact {
@@ -174,19 +283,35 @@ h4 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 40px;
 }
 
 #contact h1 {
-  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#contact div {
+  display: flex;
+  gap: 20px;
 }
 
 #contact a {
   display: inline-block;
   color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 
 #contact a:hover {
-  font-size: 1.3em;
+  transform: scale(1.1);
 }
 
 @media(max-width: 500px) {
